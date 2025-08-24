@@ -25,42 +25,19 @@ AI生成画像のプロンプト情報やその他の埋め込みデータを確
 
 6. 拡張機能一覧に「PNGinfo Viewer」が表示されれば完了
 
-## 🚀 使用方法
+## 使い方
 
-### 基本的な使い方
 1. Chromeツールバーの「PNGinfo Viewer」アイコンをクリック
-2. 新しいタブでPNGinfo Viewerが開きます
+2. 新しいタブでPNGinfo Viewerが開かれる
 3. PNG画像をドラッグ&ドロップするか、「ファイルを選択」ボタンで画像を選択
-4. 自動的に解析が開始され、メタデータが表示されます
+4. 自動的に解析が開始され、メタデータが表示される
 
-### タブ機能
-- **テキスト情報**: AI生成プロンプト、コメント、作者情報など
-- **技術情報**: 画像サイズ、ビット深度、圧縮方式、タイムスタンプなど
-- **生データ**: PNGチャンクの詳細情報
+## 技術スタック
+- JavaScript: ES2015、Manifest V3
+- HTML5
+- CSS3
 
-### 複数画像の管理
-- 複数の画像をアップロードすると、サムネイル一覧が表示されます
-- サムネイルをクリックして画像を切り替えできます
-- 「すべてリセット」ボタンですべての画像をクリアできます
+## ライセンス
 
-## 🔧 技術仕様
+MIT License
 
-### 対応形式
-- PNG画像のみ（.png）
-- 各種PNGチャンク（tEXt, iTXt, zTXt, IHDR, pHYs, tIMEなど）
-- 圧縮されたzTXtチャンク（DecompressionStream使用）
-
-### 技術スタック
-- **JavaScript**: ES2015+、Manifest V3
-- **HTML5**: セマンティックマークアップ
-- **CSS3**: Grid Layout、Flexbox、レスポンシブデザイン
-
-## 📄 ライセンス
-
-[MIT License](LICENSE)
-
-
-## 👨‍💻 作者
-
-**Sunadarake**
-- GitHub: [@sunadarake](https://github.com/sunadarake)
