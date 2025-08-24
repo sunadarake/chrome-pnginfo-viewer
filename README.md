@@ -9,7 +9,7 @@ AI生成画像のプロンプト情報やその他の埋め込みデータを確
 
 ### インストール方法
 
-1. このリポジトリをクローンまたはダウンロード
+1. `git clone`をする。
    ```bash
    git clone https://github.com/sunadarake/chrome-pnginfo-viewer.git
    cd chrome-pnginfo-viewer
