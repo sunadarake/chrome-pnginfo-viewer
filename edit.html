@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNGinfo Viewer</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダー -->
+        <header class="header">
+            <h1 class="title">PNGinfo Viewer</h1>
+            <p class="subtitle">画像のPNGメタデータを表示します</p>
+        </header>
+
+        <!-- アップロードエリア -->
+        <section class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <div class="upload-icon">📸</div>
+                    <h3>画像をアップロードしてください</h3>
+                    <p>PNG画像をドラッグ&ドロップするか、クリックしてファイルを選択</p>
+                    <input type="file" id="fileInput" accept="image/png" multiple>
+                    <button class="upload-button" id="uploadButton">ファイルを選択</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 画像リスト -->
+        <section class="image-list-section" id="imageListSection" style="display: none;">
+            <div class="section-header">
+                <h2>アップロード済み画像</h2>
+                <button class="reset-button" id="resetButton">すべてリセット</button>
+            </div>
+            <div class="image-list" id="imageList"></div>
+        </section>
+
+        <!-- PNGinfo表示エリア -->
+        <section class="pnginfo-section" id="pnginfoSection" style="display: none;">
+            <div class="section-header">
+                <h2>PNGinfo</h2>
+                <span class="current-filename" id="currentFilename"></span>
+            </div>
+            <div class="pnginfo-content">
+                <div class="image-preview">
+                    <img id="previewImage" alt="プレビュー画像">
+                    <div class="image-info" id="imageInfo"></div>
+                </div>
+                <div class="metadata-display">
+                    <div class="metadata-tabs">
+                        <button class="tab-button active" data-tab="text">テキスト情報</button>
+                        <button class="tab-button" data-tab="technical">技術情報</button>
+                        <button class="tab-button" data-tab="raw">生データ</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-panel active" id="textPanel">
+                            <div class="metadata-section" id="textMetadata"></div>
+                        </div>
+                        <div class="tab-panel" id="technicalPanel">
+                            <div class="metadata-section" id="technicalMetadata"></div>
+                        </div>
+                        <div class="tab-panel" id="rawPanel">
+                            <div class="metadata-section" id="rawMetadata"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- フッター -->
+        <footer class="footer">
+            <p>&copy; 2024 PNGinfo Viewer Extension</p>
+        </footer>
+    </div>
+
+    <script src="edit.js"></script>
+</body>
+</html>
